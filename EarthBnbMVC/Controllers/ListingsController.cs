@@ -1,30 +1,17 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.AspNetCore.Mvc;
 
-namespace EarthBnb.Models
+namespace EarthBnbMVC.Controllers
 {
-    public class Listing
+    public class ListingsController : Controller
     {
+        public IActionResult Index()
+        {
+            return View();
+        }
 
-        [Required]
-        public int Id { get; set; }
-
-        public string Location { get; set; }
-
-        public int MaxGuests { get; set; }
-
-        public int NightCost { get; set; }
-
-        public DateTime DateOfBirth { get; set; }
-        public DateTime AvailableDates { get; set; }
-
-        public float StarScore { get; set; }
-
-        public int Bedrooms { get; set; }
-
-        public int ServiceFee { get; set; }
-
-        public string Description { get; set; }
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
