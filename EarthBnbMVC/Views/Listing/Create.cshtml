@@ -1,15 +1,7 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@using EarthBnb.Models
+@model Listing
 
-
-@{
-    ViewData["Title"] = "Create";
-}
-
-<h1>Create</h1>
+<h1>Create Listing</h1>
 
 <hr />
 
@@ -22,14 +14,17 @@
             </div>
             <div class="card-body">
                 <form asp-controller="Listing" asp-action="CreateListing" method="post">
-
                     <div class="mb-3">
                         <label class="form-label">Title</label>
-                        <input asp-for=Name type="text" class="form-control" />
+                        <input asp-for=Location type="text" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Title</label>
+                        <input asp-for=NightCost type="text" class="form-control" />
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Price</label>
-                        <input asp-for=Age type="number" class="form-control" />
+                        <input asp-for=Description type="number" class="form-control" />
                     </div>
                     <div class="mb-3">
                         <button type="submit" class="btn btn-primary">Save</button>

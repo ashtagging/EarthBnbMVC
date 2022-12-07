@@ -13,7 +13,7 @@ namespace EarthBnbMVC.Controllers
         public IActionResult Create()
         {
             var listing = new Listing();
-            return View();
+            return View(listing);
         }
 
         public IActionResult CreateListing(Listing listing )
