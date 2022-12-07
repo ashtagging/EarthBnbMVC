@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EarthBnb.Models
 {
-    public class Listings
+    public class Listing
     {
 
         [Required]
