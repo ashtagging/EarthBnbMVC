@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EarthBnb.Models
+namespace EarthBnbMVC.Models
 {
     public class Listing
     {

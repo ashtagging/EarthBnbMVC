@@ -1,4 +1,4 @@
-﻿using EarthBnb.Models;
+﻿using EarthBnbMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EarthBnbMVC.Controllers
@@ -16,9 +16,9 @@ namespace EarthBnbMVC.Controllers
             return View(listing);
         }
 
-        public IActionResult CreateListing(Listing listing )
-        {
-            return View("Index");
-        }
+        //public IActionResult CreateListing(Listing listing)
+        //{
+        //    return View("Index");
+        //}
     }
 }
